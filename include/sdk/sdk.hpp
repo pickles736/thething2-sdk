@@ -24,7 +24,7 @@ namespace sdk {
         #endif
         
         bool read_raw(HANDLE handle, uintptr_t address, void* output, size_t size);
-        bool write_raw(HANDLE handle, uintptr_t address, const void* input, size_t size);
+        bool write_raw(HANDLE handle, uintptr_t address, void* input, size_t size);
         std::string read_string(HANDLE handle, uintptr_t address);
         uintptr_t find_module_address(HANDLE handle, std::string_view module_name);
         uintptr_t find_pattern(HANDLE handle, std::string_view module, std::string_view pattern);
