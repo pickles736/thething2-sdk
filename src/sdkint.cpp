@@ -1,7 +1,7 @@
 // SDK Internal
 // For internal cheats
 
-#include "sdk.hpp"
+#include "sdk/sdk.hpp"
 
 #include <cstring>
 #include <cstdint>
