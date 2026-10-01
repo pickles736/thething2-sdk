@@ -30,5 +30,8 @@ target_include_directories(external
         src/
 )
 
+target_compile_definitions(external PRIVATE EXTERNAL)
+target_compile_definitions(internal PRIVATE INTERNAL)
+
 add_library(SDK::Internal ALIAS internal)
 add_library(SDK::External ALIAS external)
